@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "macos-terminal"
+version = "1.0.0"
+description = "Tool for interacting with the MacOS Terminal.app"
+authors = ["Henrik <henrik@localhost>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.scripts]
+title = 'macos_terminal.cli.title:main'
+theme = 'macos_terminal.cli.theme:main'
+resize = 'macos_terminal.cli.resize:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

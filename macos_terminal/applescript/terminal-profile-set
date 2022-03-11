@@ -1,0 +1,14 @@
+#!/usr/bin/osascript
+(* Set the profile of the active Terminal.app window/tab *)
+on run argv
+    set profileName to item 1 of argv
+    tell application "Terminal"
+        (* Get window id of the current window/tab *)
+        tell window 1
+            set window_id to get id
+        end tell
+        (* Set profile of the current window/tab *)
+        set current settings of (every window whose id is window_id) to settings set profileName
+    end tell
+end run
+

@@ -1,0 +1,13 @@
+#!/usr/bin/osascript
+(* Set the location and size of the active Terminal.app window/tab *)
+on run argv
+    set x to item 1 of argv
+    set y to item 2 of argv
+    set w to item 3 of argv
+    set h to item 4 of argv
+    tell application "Terminal"
+        tell window 1
+            set bounds to {x, y, w, h}
+        end tell
+    end tell
+end run

@@ -1,0 +1,7 @@
+#!/usr/bin/osascript
+(* Get the profile of the active Terminal.app window/tab *)
+tell application "Terminal"
+    tell window 1
+        get name of current settings
+    end tell
+end tell

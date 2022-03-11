@@ -1,0 +1,7 @@
+#!/usr/bin/osascript
+(* Get the location and size of the active Terminal.app window/tab *)
+tell application "Terminal"
+    tell window 1
+        get bounds
+    end tell
+end tell

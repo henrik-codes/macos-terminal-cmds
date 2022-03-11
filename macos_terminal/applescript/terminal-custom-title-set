@@ -1,0 +1,10 @@
+#!/usr/bin/osascript
+(* Set the custom title of the active Terminal.app window/tab *)
+on run argv
+    set newTitle to item 1 of argv
+    tell application "Terminal"
+        tell window 1
+            set custom title to newTitle
+        end tell
+    end tell
+end run
