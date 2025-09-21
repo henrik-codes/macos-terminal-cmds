@@ -6,6 +6,7 @@ MacOS Terminal.app. It can also be used as a Python library.
 ## Requirements
 
 * MacOS, tested on:
+  - MacOS 26 "Tahoe"
   - MacOS 15 "Sequoia"
   - MacOS 14 "Sonoma"
   - MacOS 13 "Ventura"
